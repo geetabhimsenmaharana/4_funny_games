@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Judge 😂</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="game">
+
+        <h1>AI Judge 😂</h1>
+
+        <p class="subtitle">
+            Give your best answer. The AI Judge will decide your fate.
+        </p>
+
+        <div class="score">
+            Score: <span id="score">0</span>
+        </div>
+
+        <div class="question" id="question">
+            Loading question...
+        </div>
+
+        <textarea
+            id="answer"
+            placeholder="Type your answer here..."
+        ></textarea>
+
+        <br>
+
+        <button id="submitButton" onclick="judgeAnswer()">
+            Judge My Answer 🤖
+        </button>
+
+        <div class="result" id="result"></div>
+
+        <button
+            class="next"
+            id="nextButton"
+            onclick="nextQuestion()">
+            Next Question →
+        </button>
+
+        <button
+            class="restart"
+            id="restartButton"
+            onclick="restartGame()">
+            Play Again 🔄
+        </button>
+
+    </div>
+
+    <script src="logic.js"></script>
+
+</body>
+
+</html>
+
